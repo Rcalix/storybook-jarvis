@@ -2,6 +2,7 @@ import React from 'react';
 import data from './data.json';
 import { StyleRoot } from "radium";
 import '@storybook/addon-knobs/register'
+import { withNotes } from '@storybook/addon-notes';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { storiesOf } from '@storybook/react';
@@ -18,7 +19,7 @@ import { withKnobs, text, boolean, number, select } from '@storybook/addon-knobs
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
-  .add("Button - primary", () => (
+  .add("Button - primary", withNotes('A very simple component')(() => (
     <Button
       color={select("Color", ["blue", "white", "gray", "red", "transparent"], "blue")}
       size={select("Size", ["tiny", "small", "medium", "large", "huge"], "medium")}
@@ -30,7 +31,7 @@ storiesOf('Button', module)
     >
       {text("Text", "Hello Button")}
     </Button>
-  ))
+  )));
 
 storiesOf('Author', module)
   .addDecorator(withKnobs)

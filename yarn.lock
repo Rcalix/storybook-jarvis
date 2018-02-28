@@ -45,6 +45,16 @@
     global "^4.3.2"
     prop-types "^15.5.10"
 
+"@storybook/addon-notes@^3.3.14":
+  version "3.3.14"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-3.3.14.tgz#389918989f91d42236d7f44774d5aa0cf8f81d05"
+  dependencies:
+    babel-runtime "^6.26.0"
+    prop-types "^15.6.0"
+    util-deprecate "^1.0.2"
+  optionalDependencies:
+    "@types/react" "^16.0.20"
+
 "@storybook/addons@^3.3.14":
   version "3.3.14"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.3.14.tgz#20a65085b834898ea6154b9061ebc65a74c6cb33"
@@ -209,6 +219,10 @@
     react-split-pane "^0.1.74"
     react-treebeard "^2.1.0"
     redux "^3.7.2"
+
+"@types/react@^16.0.20":
+  version "16.0.38"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.38.tgz#76617433ea10274505f60bb86eddfdd0476ffdc2"
 
 abab@^1.0.3:
   version "1.0.4"
